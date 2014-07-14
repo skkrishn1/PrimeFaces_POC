@@ -3,6 +3,6 @@
 
 <display>
 	<category name="category.sample">
-		<portlet id="liferay_services" />
+		<portlet id="applicant-portlet" />
 	</category>
 </display>

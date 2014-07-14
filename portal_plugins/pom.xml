@@ -43,7 +43,7 @@
 	</build>
 	<modules>
 		<module>applicant-portlet</module>
-		<!-- <module>applicantsView-portlet</module>-->
+		<module>applicantsView-portlet</module>
 		<module>applicant-portlet-service</module>
 	</modules>
 </project>
