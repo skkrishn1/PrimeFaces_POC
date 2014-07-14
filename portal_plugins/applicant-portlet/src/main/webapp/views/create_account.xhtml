@@ -26,9 +26,9 @@
 					<p:inputText id="address"  value="#{libraryAction.bookTitle}" required="true" requiredMessage="Please enter a valid Address" /><br/>
 				 -->	
 					<h:outputLabel value="Upload Resume :*" style="font-weight:bold" /><br/>
-					<p:fileUpload id="fileToUpload" sizeLimit="30000000" required="true" auto="true" requiredMessage="Please select a file to upload" 
+					<p:fileUpload id="fileToUpload" sizeLimit="30000000" auto="true"
 						description="sample file" cancelLabel="Cancel"
-						label="Upload Resume" fileUploadListener="#{registrationBackingBean.file}" mode="simple" ajax="false" /><br/><br/>
+						label="Upload Resume" value="#{registrationBackingBean.file}" mode="simple" /><br/><br/>
 					
 					<p:commandButton value="Submit"  actionListener="#{registrationBackingBean.submit}" id="submit" ajax="false" update="msg" />
 				</p:panel>
