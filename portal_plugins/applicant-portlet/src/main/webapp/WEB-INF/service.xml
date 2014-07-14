@@ -1,0 +1,30 @@
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+
+<service-builder package-path="com.liferay.services">
+    <author>Suresh Kumar</author>
+	<namespace>t</namespace>
+	<entity name="Applicant" local-service="true" remote-service="true">
+			<!-- PK fields -->
+			<column name="applicantId" type="long" primary="true" />
+			<!-- Audit fields -->
+			<column name="firstName" type="String" />
+			<column name="middleName" type="String" />
+			<column name="lastName" type="String" />
+			<column name="qualifications" type="String" />
+			<column name="addressLine1" type="String" />
+			<column name="addressLine2" type="String" />
+			<column name="city" type="String" />
+			<column name="street" type="String" />
+			<column name="postCode" type="String" />
+			<column name="createDate" type="Date" /> 
+			<column name="modifiedDate" type="Date" />  
+			<!-- Order -->
+			<order by="asc">
+				<order-column name="firstName" />
+			</order>
+			<!-- Finder methods -->
+			<finder name="name" return-type="Collection">
+				<finder-column name="firstName" />
+			</finder>
+	</entity>
+</service-builder>
