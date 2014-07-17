@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<f:view
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+	<h:head />
+<h:body>
+ <center>
+		<h4>view applicant details (IPC Demo)</h4>
+		<h:form>
+			<table border="2" style="width: 500px;">
+				<tr>
+					<th style="width: 230px; height: 25px;">First Name</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.firstName}</td>
+				</tr>
+				<tr>
+					<th style="width: 230px; height: 25px;">Middle Name</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.middleName}</td>
+				</tr>
+				<tr>
+					<th style="width: 230px; height: 25px;">Last Name</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.lastName}</td>
+				</tr>
+				<tr>
+					<th style="width: 230px; height: 25px;">Qualifications</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.qualifications}</td>
+				</tr>
+				<tr>
+					<th style="width: 230px; height: 25px;">Address</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.addressLine1}</td>
+				</tr>
+				<tr>
+					<th style="width: 230px; height: 25px;">City</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.city}</td>
+				</tr>
+				<tr>
+					<th style="width: 230px; height: 25px;">Post Code</th>
+					<td style="font-weight:bold">#{registrationModelBean.user.postCode}</td>
+				</tr>
+				
+				
+				 
+			</table>
+			<h4>
+			 
+			</h4>	
+		</h:form>
+	</center>	
+</h:body>
+</f:view>

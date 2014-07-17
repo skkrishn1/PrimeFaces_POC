@@ -156,6 +156,11 @@ public class RegistrationBackingBean implements Serializable {
 			applicant.setMiddleName(user.getLastName());
 			applicant.setLastName(user.getLastName());
 			applicant.setQualifications(user.getQualifications());
+			applicant.setAddressLine1(user.getAddressLine1());
+			applicant.setAddressLine2(user.getAddressLine2());
+			applicant.setStreet(user.getStreet());
+			applicant.setCity(user.getCity());
+			applicant.setPostCode(user.getPostCode());
 			applicant.setCreateDate(dateAdded);
 			applicant.setModifiedDate(dateAdded);
 			applicant = ApplicantLocalServiceUtil.addApplicant(applicant);

@@ -14,21 +14,25 @@
 			
 				<p:panel id="grid">
 					<h:messages id="msg" showDetail="false"/>
-					<h:outputLabel value="First Name :*" style="font-weight:bold" /><br/>
+					<h:outputLabel value="First Name*" style="font-weight:bold" /><br/>
 					<p:inputText id="firstName" value="#{registrationModelBean.user.firstName}"  required="true" requiredMessage="Please enter a valid first name"  /><br/>
-					<h:outputLabel value="Middle Name :*" style="font-weight:bold" /><br/>
+					<h:outputLabel value="Middle Name*" style="font-weight:bold" /><br/>
 					<p:inputText id="middleName"  value="#{registrationModelBean.user.middleName}" required="true" requiredMessage="Please enter a valid middle title" /><br/>
-					<h:outputLabel value="Last Name :*" style="font-weight:bold" /><br/>
+					<h:outputLabel value="Last Name*" style="font-weight:bold" /><br/>
 					<p:inputText id="lastName"  value="#{registrationModelBean.user.lastName}" required="true" requiredMessage="Please enter a valid last title" /><br/>
-					<h:outputLabel value="Qualification :" style="font-weight:bold" /><br/>
+					<h:outputLabel value="Qualification*" style="font-weight:bold" /><br/>
 					<p:inputText id="qualification"  value="#{registrationModelBean.user.qualifications}"  required="true" requiredMessage="Please enter a valid qualification" /><br/>
-				<!-- 	<h:outputLabel value="Address :" style="font-weight:bold" /><br/>
-					<p:inputText id="address"  value="#{libraryAction.bookTitle}" required="true" requiredMessage="Please enter a valid Address" /><br/>
-				 -->	
-					<h:outputLabel value="Upload Resume :*" style="font-weight:bold" /><br/>
+					<h:outputLabel value="Address*" style="font-weight:bold" /><br/>
+					<p:inputText id="address"  value="#{registrationModelBean.user.addressLine1}" required="true" requiredMessage="Please enter a valid Address" /><br/>
+					<!-- <p:inputText id="address1"  value="#{registrationModelBean.user.addressLine2}" /><br/>
+					 --><h:outputLabel value="City" style="font-weight:bold" /><br/>
+					<p:inputText id="city"  value="#{registrationModelBean.user.city}" /><br/>
+					<h:outputLabel value="Post Code*" style="font-weight:bold" /><br/>
+					<p:inputText id="postCode"  value="#{registrationModelBean.user.postCode}"  required="true" requiredMessage="Please enter a valid post code" /><br/>
+					<h:outputLabel value="Upload Resume*" style="font-weight:bold" /><br/>
 					<p:fileUpload id="fileToUpload" sizeLimit="30000000" auto="true"
 						description="sample file" cancelLabel="Cancel"
-						label="Upload Resume" value="#{registrationBackingBean.file}" mode="simple" /><br/><br/>
+						label="Upload Resume*" value="#{registrationBackingBean.file}" mode="simple" /><br/><br/>
 					
 					
 					<p:commandButton value="Submit"  actionListener="#{registrationBackingBean.submit}" id="submit" ajax="false" update="msg" />

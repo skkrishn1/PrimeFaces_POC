@@ -35,6 +35,8 @@ public class RegistrationModelBean implements Serializable {
 
 	/** The user. */
 	User user;
+	
+	
 
 	/**
 	 * Post construct.

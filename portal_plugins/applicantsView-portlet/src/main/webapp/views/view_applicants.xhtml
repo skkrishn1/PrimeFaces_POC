@@ -23,7 +23,7 @@
 			    rowKey="#{user.applicantId}"
 			    emptyMessage="Their are no applicants to view"
 				editable="true" rows="5" paginator="true"
-				paginatorPosition="bottom" selection="#{applicantsViewModelBean.selectedUser}" selectionMode="single">
+				paginatorPosition="bottom" selection="#{applicantsViewModelBean.selectedUser}" selectionMode="single" scrollable="true" scrollHeight="150" scrollRows="8" liveScroll="true" scrollWidth="850">
 		 		
 		 		
 				<f:facet name="header">
@@ -80,6 +80,20 @@
 						</f:facet>
 						<f:facet name="input">
 							<h:inputText value="#{user.lastName}" />
+						</f:facet>
+					</p:cellEditor>
+					 
+				</p:column>
+				<p:column headerText="Qualifications" sortBy="#{user.qualifications}"
+					filterBy="#{user.qualifications}" >
+					<p:cellEditor>
+						<f:facet name="output">
+							 
+								<h:outputText value="#{user.qualifications}" />
+							 
+						</f:facet>
+						<f:facet name="input">
+							<h:inputText value="#{user.qualifications}" />
 						</f:facet>
 					</p:cellEditor>
 					 

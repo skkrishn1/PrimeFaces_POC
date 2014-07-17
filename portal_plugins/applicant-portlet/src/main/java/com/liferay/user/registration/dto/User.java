@@ -28,8 +28,21 @@ public class User implements Serializable {
 	/** The qualifications. */
 	private String qualifications;
 	
-	/** The address. */
-	private Address address;
+	/** The address line1. */
+	private String addressLine1;
+	
+	/** The address line2. */
+	private String addressLine2;
+	
+	/** The city. */
+	private String city;
+	
+	/** The street. */
+	private String street;
+	
+	/** The post code. */
+	private String postCode;
+
 	
 	private String fileName;
 
@@ -106,24 +119,6 @@ public class User implements Serializable {
 	}
 
 	/**
-	 * Gets the address.
-	 *
-	 * @return the address
-	 */
-	public Address getAddress() {
-		return address;
-	}
-
-	/**
-	 * Sets the address.
-	 *
-	 * @param address the new address
-	 */
-	public void setAddress(Address address) {
-		this.address = address;
-	}
-	
-	/**
 	 * @return applicantId
 	 */
 	public long getApplicantId() {
@@ -143,6 +138,46 @@ public class User implements Serializable {
 
 	public void setFileName(String fileName) {
 		this.fileName = fileName;
+	}
+
+	public String getAddressLine1() {
+		return addressLine1;
+	}
+
+	public void setAddressLine1(String addressLine1) {
+		this.addressLine1 = addressLine1;
+	}
+
+	public String getAddressLine2() {
+		return addressLine2;
+	}
+
+	public void setAddressLine2(String addressLine2) {
+		this.addressLine2 = addressLine2;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getStreet() {
+		return street;
+	}
+
+	public void setStreet(String street) {
+		this.street = street;
+	}
+
+	public String getPostCode() {
+		return postCode;
+	}
+
+	public void setPostCode(String postCode) {
+		this.postCode = postCode;
 	}
 
 

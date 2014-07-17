@@ -38,6 +38,7 @@ public class ApplicantsViewModelBean implements Serializable {
  	// Private Bean Properties
 	private List<User> allApplicants =null;
 	
+	
 	private User selectedUser;
 
 	private String firstName;
@@ -51,6 +52,10 @@ public class ApplicantsViewModelBean implements Serializable {
 	@PreDestroy
 	public void preDestroy() {
 		logger.trace("@PreDestroy annotation worked");
+	}
+
+	public void setAllApplicants(List<User> allApplicants) {
+		this.allApplicants = allApplicants;
 	}
 
 	public List<User> getAllApplicants() {
@@ -73,6 +78,11 @@ public class ApplicantsViewModelBean implements Serializable {
 				user.setFirstName(applicant.getFirstName());
 				user.setLastName(applicant.getLastName());
 				user.setMiddleName(applicant.getMiddleName());
+				user.setQualifications(applicant.getQualifications());
+				user.setAddressLine1(applicant.getAddressLine1());
+				user.setAddressLine2(applicant.getAddressLine2());
+				user.setPostCode(applicant.getPostCode());
+				user.setCity(applicant.getCity());
 				allApplicants.add(user);
 			}
 		} catch (SystemException e) {
